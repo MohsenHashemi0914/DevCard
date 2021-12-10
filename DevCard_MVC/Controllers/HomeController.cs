@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using DevCard_MVC.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DevCard_MVC.Controllers
 {
@@ -8,9 +10,25 @@ namespace DevCard_MVC.Controllers
         {
         }
 
+        [HttpGet]
         public IActionResult Contact()
         {
-            return View();
+            var contact = new Contact();
+            return View(contact);
+        }
+
+        //[HttpPost]
+        //public JsonResult Contact(IFormCollection form)
+        //{
+        //    var name = form["name"];
+        //    return Json(Ok());
+        //}
+
+        [HttpPost]
+        public JsonResult Contact(Contact form)
+        {
+            Console.WriteLine(form.ToString());
+            return Json(Ok());
         }
 
         public IActionResult Index()

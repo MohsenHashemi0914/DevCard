@@ -23,7 +23,6 @@ C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.TagHelpers.input.cache
 C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.TagHelpers.output.cache
 C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\DevCard_MVC.RazorCoreGenerate.cache
 C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Git\DevCard\DevCard_MVC\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
