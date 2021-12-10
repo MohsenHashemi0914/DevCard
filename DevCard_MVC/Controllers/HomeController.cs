@@ -45,10 +45,10 @@ namespace DevCard_MVC.Controllers
 
             //return RedirectToAction("Index");
             ModelState.Clear();
-            model.Email = "";
-            model.Name = "";
-            model.Message = "";
-            model.Service = 0;
+            //model.Email = "";
+            //model.Name = "";
+            //model.Message = "";
+            //model.Service = 0;
             ViewData["success"] = "پیغام شما با موفقیت ارسال شد. با تشکر";
             return View(model);
         }
