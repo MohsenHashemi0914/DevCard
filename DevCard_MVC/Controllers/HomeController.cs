@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DevCard_MVC.Data;
 using DevCard_MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -14,6 +15,19 @@ namespace DevCard_MVC.Controllers
             new Service(3, "پلاتین"),
             new Service(4, "الماسی")
         };
+
+        public IActionResult Index(string name)
+        {
+            return View();
+        }
+
+        public IActionResult ProjectDetails(long id)
+        {
+            var project = ProjectStore.GetProjectBy(id);
+            if (project == null) return NotFound();
+
+            return View(project);
+        }
 
         [HttpGet]
         public IActionResult Contact()
@@ -45,17 +59,12 @@ namespace DevCard_MVC.Controllers
 
             //return RedirectToAction("Index");
             ModelState.Clear();
-            //model.Email = "";
-            //model.Name = "";
-            //model.Message = "";
-            //model.Service = 0;
+            model.Email = "";
+            model.Name = "";
+            model.Message = "";
+            model.Service = 0;
             ViewData["success"] = "پیغام شما با موفقیت ارسال شد. با تشکر";
             return View(model);
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
     }
 }
